@@ -11,13 +11,13 @@ variables:
   azureServiceConnectionId: 'efd62851-ff95-4cad-b88c-4c3fe8893fa8'
   
   # Web app name
-  webAppName: 'pauls-cicd-pipeline'
+  webAppName: 'udacity-flask-ml-service'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
   # Environment name
-  environmentName: 'pauls-cicd-pipeline'
+  environmentName: 'udacity-flask-ml-service'
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
