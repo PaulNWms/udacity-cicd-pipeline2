@@ -25,6 +25,13 @@ def home():
     html = "<h3>Sklearn Prediction Home</h3>"
     return html.format(format)
 
+@app.route("/log")
+def log():
+    text_file = open("app.log", "r")
+    log_data = text_file.read()
+    text_file.close()
+    return log_data
+
 # TO DO:  Log out the prediction value
 @app.route("/predict", methods=['POST'])
 def predict():
